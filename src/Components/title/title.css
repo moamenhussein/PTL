@@ -1,0 +1,14 @@
+.headTitle {
+  font-style: italic;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  z-index: 22;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
