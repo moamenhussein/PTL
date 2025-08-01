@@ -1,0 +1,67 @@
+.headingteam {
+  padding-top: 5rem;
+  overflow: hidden;
+  position: relative;
+  background-image: url('../../assets/images/projectDetails/hero.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-position: center top;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #0000006e;
+  }
+  .container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+    position: relative;
+    .info {
+      h3 {
+        font-size: 5rem;
+        color: var(--white-color);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: italic;
+      }
+      .home {
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.625rem;
+        color: white;
+        font-size: 1.25rem;
+        a {
+          transition: var(--main-transition);
+          -webkit-transition: var(--main-transition);
+          -moz-transition: var(--main-transition);
+          -ms-transition: var(--main-transition);
+          -o-transition: var(--main-transition);
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 768px) {
+  .headingteam {
+    .info {
+      h3 {
+        font-size: 1.875rem !important;
+      }
+      .home {
+        font-size: 1.125rem !important;
+        margin-top: 1.5625rem !important;
+      }
+    }
+  }
+}
