@@ -55,23 +55,22 @@ export default function HowWork() {
           We follow a clear, proven process to deliver reliable solar and power
           solutions.
         </motion.p>
-        <div className="boxs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+        <motion.div
+          className="boxs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           {works.map((work) => {
             return (
-              <motion.div
-                className="work"
-                key={work.id}
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5 }}
-              >
+              <div className="work" key={work.id}>
                 <h3>{work.icon}</h3>
                 <h5>{work.heading}</h5>
                 <p>{work.paragraph}</p>
-              </motion.div>
+              </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
