@@ -14,7 +14,7 @@
     background-color: #0000006e;
   }
   .container {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,13 +53,15 @@
 }
 @media(max-width: 768px) {
   .headingteam {
-    .info {
-      h3 {
-        font-size: 1.875rem !important;
-      }
-      .home {
-        font-size: 1.125rem !important;
-        margin-top: 1.5625rem !important;
+    .container {
+      .info {
+        h3 {
+          font-size: 1.875rem !important;
+        }
+        .home {
+          font-size: 1.125rem !important;
+          margin-top: 1.5625rem !important;
+        }
       }
     }
   }
