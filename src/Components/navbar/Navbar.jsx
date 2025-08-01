@@ -11,12 +11,12 @@ export default function Navbar() {
   const toggleMenu = () => setMenu((prev) => !prev);
   const navItems = [
     { title: 'Home', href: '/' },
-    { title: 'About Us', href: '/' },
-    { title: 'Services', href: '/' },
+    { title: 'About Us', href: '/about' },
+    { title: 'Services', href: '/services' },
     { title: 'Projects', href: '/projectDetails' },
-    { title: 'Gallery', href: '/' },
-    { title: 'Our Team', href: '/' },
-    { title: 'Certificates', href: '/certificate' },
+    { title: 'Gallery', href: '/gallerypage' },
+    { title: 'Our Team', href: '/team' },
+    { title: 'Certificates', href: '/certificates' },
   ];
   return (
     <header>

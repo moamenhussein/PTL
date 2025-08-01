@@ -21,6 +21,7 @@
     }
   }
   .cards {
+    background-color: var(--nav-color) !important;
     margin-top: 5rem;
     .box {
       position: relative;

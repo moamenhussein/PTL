@@ -9,11 +9,12 @@
       text-align: center;
       position: absolute;
       content: 'Services';
-      top: -80px;
-      font-size: 6.25rem;
+      top: -50px;
+      font-size: 5rem;
       font-style: italic !important;
       color: transparent;
       -webkit-text-stroke: 0.5px #ccc;
+      text-transform: uppercase;
     }
   }
   h5 {
@@ -31,7 +32,7 @@
 @media(max-width: 768px) {
   .headingTitle::before {
     width: 100%;
-    font-size: 60px !important;
-    top: -45px !important;
+    font-size: 2.5rem !important;
+    top: -1.5625rem !important;
   }
 }

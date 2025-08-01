@@ -17,6 +17,10 @@
         color: var(--main-color);
         margin-top: 1.25rem;
       }
+      .head {
+        margin: 1.875rem 0;
+        font-weight: bold;
+      }
       p {
         margin: 1.875rem 0;
         color: var(--paragraph-color);

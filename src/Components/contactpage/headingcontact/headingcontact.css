@@ -1,0 +1,15 @@
+.headingcontact {
+  background-color: #e8e8fc;
+  .container {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: var(--main-color);
+      font-style: italic;
+    }
+  }
+}

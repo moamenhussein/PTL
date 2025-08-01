@@ -1,0 +1,44 @@
+.expertise {
+  overflow: hidden;
+  background-color: var(--nav-color);
+  padding: 6.25rem 0;
+  .container {
+    h2 {
+      color: var(--second-color);
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.875rem;
+    }
+    h6 {
+      margin-top: .75rem;
+      color: #393a39;
+      font-size: 1.0625rem;
+      font-weight: bold;
+    }
+    ul {
+      margin-top: 1.5625rem;
+      color: var(--paragraph-color);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      font-weight: bold;
+      li {
+        position: relative;
+        padding-left: 1.25rem;
+        &::before {
+          position: absolute;
+          content: ".";
+          width: 20px;
+          height: 20px;
+          left: 0;
+          margin-top: -0.9375rem;
+          font-size: 3.125rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+}

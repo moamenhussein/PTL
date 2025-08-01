@@ -141,14 +141,14 @@ export default function SectionTwo() {
                     <Image src={project.image} alt="Image" />
                   </motion.div>
                   <div>
-                    <motion.h3
+                    <motion.h4
                       className="text-center text-1xl md:text-3xl font-bold text-[#f15a24] details"
                       initial={{ opacity: 0, scale: 0 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.5 }}
                     >
                       Details About Project
-                    </motion.h3>
+                    </motion.h4>
                     <motion.div
                       className="info"
                       initial={{ x: 100, opacity: 0 }}
@@ -156,23 +156,23 @@ export default function SectionTwo() {
                       transition={{ duration: 0.5 }}
                     >
                       <div>
-                        <h3>Project : </h3>
+                        <h2>Project : </h2>
                         <h5>{project.project}</h5>
                       </div>
                       <div>
-                        <h3>Owner : </h3>
+                        <h2>Owner : </h2>
                         <h5>{project.owner}</h5>
                       </div>
                       <div>
-                        <h3>Consultant/OE : </h3>
+                        <h2>Consultant/OE : </h2>
                         <h5>{project.consultant}</h5>
                       </div>
                       <div>
-                        <h3>EPC Contractor : </h3>
+                        <h2>EPC Contractor : </h2>
                         <h5>{project.contractor}</h5>
                       </div>
                       <div>
-                        <h3>Scope of work : </h3>
+                        <h2>Scope of work : </h2>
                         <div className="headingAndUls">
                           <h5 className="head font-bold">{project.heading}</h5>
                           <ul>
@@ -183,15 +183,15 @@ export default function SectionTwo() {
                         </div>
                       </div>
                       <div>
-                        <h3>Contract Amount : </h3>
+                        <h2>Contract Amount : </h2>
                         <h5>{project.contractAmount}</h5>
                       </div>
                       <div>
-                        <h3>Duration : </h3>
+                        <h2>Duration : </h2>
                         <h5>{project.duration}</h5>
                       </div>
                       <div>
-                        <h3>Status : </h3>
+                        <h2>Status : </h2>
                         <h5>{project.status}</h5>
                       </div>
                     </motion.div>

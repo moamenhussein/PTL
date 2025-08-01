@@ -4,9 +4,9 @@ import aboutImage from '../../assets/images/about/about.webp';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-export default function About() {
+export default function About({ head }) {
   return (
-    <section className="about" id='about'>
+    <section className="about" id="about">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12">
         <motion.div
           className="info"
@@ -14,8 +14,11 @@ export default function About() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className='text-3xl md:text-6xl'>About</h3>
-          <h5 className='text-2xl md:text-3xl'>Power Transmission Line Installation & Commissioning</h5>
+          <h3 className="text-3xl md:text-6xl">About</h3>
+          <h5 className="text-2xl md:text-3xl">
+            Power Transmission Line Installation & Commissioning
+          </h5>
+          <h6 className='head'>{head}</h6>
           <p>
             Power Transmission Line Contracting specializes in renewable energy
             and MEP (Mechanical, Electrical, and Plumbing) solutions. With
@@ -30,7 +33,9 @@ export default function About() {
             experienced teams focus on safety, quality, and performance to meet
             every project’s unique needs.
           </p>
-          <Link href="/" className='more'>Read More</Link>
+          <Link href="/about" className="more">
+            Read More
+          </Link>
         </motion.div>
         <motion.div
           className="image"
@@ -38,7 +43,7 @@ export default function About() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Image src={aboutImage} alt="About Image" priority  />
+          <Image src={aboutImage} alt="About Image" priority />
         </motion.div>
       </div>
     </section>

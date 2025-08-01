@@ -1,9 +1,9 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-export default function SectionOne() {
+export default function SectionOne({ heading }) {
   return (
-    <section className="projectDetails">
+    <div className="projectDetails">
       <div className="container">
         <motion.div
           className="info"
@@ -11,13 +11,13 @@ export default function SectionOne() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h3>Projects</h3>
+          <h3>{heading}</h3>
           <div className="home">
             <Link href="/">Home</Link>
-            <span> &gt; Projects</span>
+            <span> &gt; {heading}</span>
           </div>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 }

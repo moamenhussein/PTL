@@ -1,0 +1,48 @@
+.galleryPage {
+  padding-top: 5rem;
+  background-color: #e8e8fc;
+  .container {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: var(--main-color);
+      font-style: italic;
+    }
+    p {
+      color: var(--section-color);
+      font-size: 1.25rem;
+    }
+    .links {
+      margin-top: 0.9375rem;
+      font-size: 1.125rem;
+      a {
+        position: relative;
+        transition: var(--main-transition);
+        -webkit-transition: var(--main-transition);
+        -moz-transition: var(--main-transition);
+        -ms-transition: var(--main-transition);
+        -o-transition: var(--main-transition);
+        &:hover {
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+}
+@media(max-width: 768px) {
+  .galleryPage {
+    .container {
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}

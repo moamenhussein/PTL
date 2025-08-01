@@ -1,0 +1,44 @@
+.choose {
+  overflow: hidden;
+  padding: 6.25rem 0;
+  .container {
+    h2 {
+      width: fit-content;
+      position: relative;
+      color: var(--main-color);
+      font-size: 2.1875rem;
+      font-weight: bold;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 70%;
+        height: 0.125rem;
+        background-color: var(--main-color);
+        left: 0;
+        bottom: -0.625rem;
+      }
+    }
+    .info,
+    .boxschoose {
+      margin-top: 1.875rem;
+    }
+    .info {
+      line-height: 1.875rem;
+      color: var(--paragraph-color);
+    }
+    .boxschoose {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      h3 {
+        color: var(--main-color);
+        font-size: 1.375rem;
+        font-weight: bold;
+      }
+      p {
+        line-height: 1.875rem;
+        color: var(--paragraph-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.work {
+  overflow: hidden;
+  padding: 5rem;
+  background-color: var(--nav-color);
+  .container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2 {
+      font-size: 1.875rem;
+      font-weight: bold;
+      color: var(--main-color);
+      position: relative;
+      width: fit-content;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 0.1875rem;
+        background-color: var(--main-color);
+        bottom: -10px;
+        left: 0;
+      }
+    }
+    p,
+    .links {
+      margin-top: 1.25rem;
+    }
+    p {
+      color: var(--paragraph-color);
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      a {
+        font-size: 1.125rem;
+        border: 1px solid var(--main-color);
+        padding: 0.9375rem 1.875rem;
+        border-radius: 1.25rem;
+        -webkit-border-radius: 1.25rem;
+        -moz-border-radius: 1.25rem;
+        -ms-border-radius: 1.25rem;
+        -o-border-radius: 1.25rem;
+        &:nth-child(1) {
+          background-color: var(--main-color);
+          color: white;
+          transition: var(--main-transition);
+          -webkit-transition: var(--main-transition);
+          -moz-transition: var(--main-transition);
+          -ms-transition: var(--main-transition);
+          -o-transition: var(--main-transition);
+          &:hover {
+            background-color: transparent;
+            color: var(--black-color);
+          }
+        }
+        &:nth-child(2) {
+          transition: var(--main-transition);
+          -webkit-transition: var(--main-transition);
+          -moz-transition: var(--main-transition);
+          -ms-transition: var(--main-transition);
+          -o-transition: var(--main-transition);
+          &:hover {
+            background-color: var(--main-color);
+            color: var(--white-color);
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 768px) {
+  .work {
+    .container {
+      h2 {
+        font-size: 1.125rem;
+      }
+      p {
+        font-size: 12px;
+      }
+      .links {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

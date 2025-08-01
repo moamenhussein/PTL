@@ -1,5 +1,6 @@
 .cards {
-  margin-top: 3.125rem;
+  padding: 5rem 0;
+  background-color: var(--section-color);
   .card,
   &:hover img {
     transition: var(--main-transition);

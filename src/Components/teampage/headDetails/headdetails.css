@@ -1,0 +1,28 @@
+.headDetails {
+  padding: 5rem 0;
+  background-color: var(--nav-color);
+  h4 {
+    width: fit-content;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--second-color);
+    font-weight: bold;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 80%;
+      height: 0.25rem;
+      background-color: var(--main-color);
+      left: 0;
+      bottom: -0.5rem;
+    }
+  }
+  p {
+    margin-top: 2.5rem 0;
+    padding-top: 2.5rem;
+    line-height: 1.5;
+    color: var(--paragraph-color);
+  }
+}

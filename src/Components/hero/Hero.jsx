@@ -33,10 +33,10 @@ export default function Hero() {
             stronger, more connected future.
           </p>
           <div className="buttons">
-            <Link className="active" href="/">
+            <Link className="active" href="/about">
               Read More
             </Link>
-            <Link href="/" className="started">
+            <Link href="/contact" className="started">
               Get Started
             </Link>
           </div>

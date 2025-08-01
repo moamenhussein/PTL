@@ -43,22 +43,22 @@ export default function Footer() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">About Us</Link>
+              <Link href="/about">About Us</Link>
             </li>
             <li>
-              <Link href="/">Services</Link>
+              <Link href="/services">Services</Link>
             </li>
             <li>
               <Link href="/projectDetails">Projects</Link>
             </li>
             <li>
-              <Link href="/">Gallery</Link>
+              <Link href="/gallerypage">Gallery</Link>
             </li>
             <li>
-              <Link href="/">Our Team</Link>
+              <Link href="/team">Our Team</Link>
             </li>
             <li>
-              <Link href="/certificate">Certificates</Link>
+              <Link href="/certificates">Certificates</Link>
             </li>
           </ul>
         </motion.div>
@@ -70,25 +70,25 @@ export default function Footer() {
           <h2 className="heading">Services</h2>
           <ul>
             <li>
-              <Link href="/">Transformer Services</Link>
+              <Link href="/services">Transformer Services</Link>
             </li>
             <li>
-              <Link href="/">Switchgear Installation</Link>
+              <Link href="/services">Switchgear Installation</Link>
             </li>
             <li>
-              <Link href="/">Protection & Control</Link>
+              <Link href="/services">Protection & Control</Link>
             </li>
             <li>
-              <Link href="/">Energy Efficiency Upgrades</Link>
+              <Link href="/services">Energy Efficiency Upgrades</Link>
             </li>
             <li>
-              <Link href="/">Power-Transmission</Link>
+              <Link href="/services">Power-Transmission</Link>
             </li>
             <li>
-              <Link href="/">Cable-Laying</Link>
+              <Link href="/services">Cable-Laying</Link>
             </li>
             <li>
-              <Link href="/">Operation-Maintenance</Link>
+              <Link href="/services">Operation-Maintenance</Link>
             </li>
           </ul>
         </motion.div>
@@ -116,13 +116,13 @@ export default function Footer() {
               <h5>Dubai : United Arab Emirates - Dubai</h5>
             </div>
             <div>
-              <IoLocation className='ksaIcon' />
+              <IoLocation className="ksaIcon" />
               <h5>KSA : Kingdom of Saudi Arabia - Riyadh - Ishbiliyah</h5>
             </div>
           </div>
         </motion.div>
       </div>
-      <h5 className='copyright'>
+      <h5 className="copyright">
         CopyRight <span>PTL</span> 2025 &copy;. All Rights Reserved
       </h5>
     </footer>
